@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Toggles with Theme Switcher</title>
+
+    <!-- Google Font: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CSS3 Toggles with Theme Switcher</h1>
+
+    <!-- Theme Switcher -->
+    <section>
+         <div class="theme-buttons">
+            <button class="purple" onclick="changeTheme('#9c27b0')" aria-label="Purple Theme"></button>
+            <button class="blue" onclick="changeTheme('#2196f3')" aria-label="Blue Theme"></button>
+            <button class="green" onclick="changeTheme('#4caf50')" aria-label="Green Theme"></button>
+            <button class="orange" onclick="changeTheme('#ff9800')" aria-label="Orange Theme"></button>
+            <button class="red" onclick="changeTheme('#f44336')" aria-label="Red Theme"></button>
+            <button class="gray" onclick="changeTheme('#9e9e9e')" aria-label="Gray Theme"></button>
+        </div>
+    </section>
+    <section class="categories">
+        <div class="flex-container">
+            <!-- Basic Toggle -->
+            <div class="category">
+                <h2>1. Basic Toggle</h2>
+                <div class="toggle-container">
+                    <label>
+                        <span>Default</span>
+                        <input type="checkbox">
+                        <span class="basic-toggle"></span>
+                    </label>
+                    <label>
+                        <span>Checked</span>
+                        <input type="checkbox" checked>
+                        <span class="basic-toggle"></span>
+                    </label>
+                    <label>
+                        <span>Disabled</span>
+                        <input type="checkbox" disabled>
+                        <span class="basic-toggle"></span>
+                    </label>
+                </div>
+            </div>
+
+         </div>
+     <!-- iOS-Style Toggle -->
+    <div class="category">
+        <h2>2. iOS-Style Toggle</h2>
+        <div class="toggle-container">
+            <label>
+                <span>Default</span>
+                <input type="checkbox">
+                <span class="ios-toggle"></span>
+            </label>
+            <label>
+                <span>Checked</span>
+                <input type="checkbox" checked>
+                <span class="ios-toggle"></span>
+            </label>
+            <label>
+                <span>Disabled</span>
+                <input type="checkbox" disabled>
+                <span class="ios-toggle"></span>
+            </label>
+        </div>
+    </div>
+
+    <!-- Android-Style Toggle -->
+    <div class="category">
+        <h2>3. Android-Style Toggle</h2>
+        <div class="toggle-container">
+            <label>
+                <span>Default</span>
+                <input type="checkbox">
+                <span class="android-toggle"></span>
+            </label>
+            <label>
+                <span>Checked</span>
+                <input type="checkbox" checked>
+                <span class="android-toggle"></span>
+            </label>
+            <label>
+                <span>Disabled</span>
+                <input type="checkbox" disabled>
+                <span class="android-toggle"></span>
+            </label>
+        </div>
+    </div>
+
+    <!-- Emoji Toggle -->
+    <div class="category">
+        <h2>4. Emoji Toggle</h2>
+        <div class="toggle-container">
+            <label>
+                <span>Default</span>
+                <input type="checkbox">
+                <span class="emoji-toggle">
+                    <span>😊</span>
+                    <span>😢</span>
+                </span>
+            </label>
+            <label>
+                <span>Checked</span>
+                <input type="checkbox" checked>
+                <span class="emoji-toggle">
+                    <span>😊</span>
+                    <span>😢</span>
+                </span>
+            </label>
+            <label>
+                <span>Disabled</span>
+                <input type="checkbox" disabled>
+                <span class="emoji-toggle">
+                    <span>😊</span>
+                    <span>😢</span>
+                </span>
+            </label>
+        </div>
+    </div>
+
+    <!-- Glow Toggle -->
+    <div class="category">
+        <h2>5. Glow Toggle</h2>
+        <div class="toggle-container">
+            <label>
+                <span>Default</span>
+                <input type="checkbox">
+                <span class="glow-toggle"></span>
+            </label>
+            <label>
+                <span>Checked</span>
+                <input type="checkbox" checked>
+                <span class="glow-toggle"></span>
+            </label>
+            <label>
+                <span>Disabled</span>
+                <input type="checkbox" disabled>
+                <span class="glow-toggle"></span>
+            </label>
+        </div>
+    </div>
+
+    <!-- Knob-Based Toggle -->
+    <div class="category">
+        <h2>6. Knob-Based Toggle</h2>
+        <div class="toggle-container">
+            <label>
+                <span>Default</span>
+                <input type="checkbox">
+                <span class="knob-toggle"></span>
+            </label>
+            <label>
+                <span>Checked</span>
+                <input type="checkbox" checked>
+                <span class="knob-toggle"></span>
+            </label>
+            <label>
+                <span>Disabled</span>
+                <input type="checkbox" disabled>
+                <span class="knob-toggle"></span>
+            </label>
+        </div>
+    </div>
+
+    <!-- Slide with Text Toggle -->
+    <div class="category">
+        <h2>7. Slide with Text Toggle</h2>
+        <div class="toggle-container">
+            <label>
+                <span>Default</span>
+                <input type="checkbox">
+                <span class="slide-toggle">
+                    <span class="off-text">OFF</span>
+                    <span class="on-text">ON</span>
+                </span>
+            </label>
+            <label>
+                <span>Checked</span>
+                <input type="checkbox" checked>
+                <span class="slide-toggle">
+                    <span class="off-text">OFF</span>
+                    <span class="on-text">ON</span>
+                </span>
+            </label>
+            <label>
+                <span>Disabled</span>
+                <input type="checkbox" disabled>
+                <span class="slide-toggle">
+                    <span class="off-text">OFF</span>
+                    <span class="on-text">ON</span>
+                </span>
+            </label>
+        </div>
+    </div>
+    </section>
+   
+
+    <script>
+        // JavaScript to dynamically change theme color for checked toggles
+        function changeTheme(color) {
+            document.documentElement.style.setProperty('--checked-color', color);
+        }
+    </script>
+</body>
+</html>
